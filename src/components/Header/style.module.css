@@ -1,0 +1,27 @@
+.headerContainer {
+    padding: 2rem 1rem;
+    box-shadow: 1px 1px 4px #0000002b;
+
+}
+
+.navContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 988px;
+    margin: 0 auto;
+}
+
+.homeButton{
+    color: var(--color-grey-3);
+    background-color: var(--color-grey-2);
+    border: none;
+    padding: 0.625rem 0.9375rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+.homeButton:hover {
+    background-color: var(--color-grey-3);
+    color: var(--color-grey-1);
+}

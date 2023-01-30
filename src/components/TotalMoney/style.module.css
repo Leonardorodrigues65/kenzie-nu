@@ -1,0 +1,30 @@
+.totalMoneyContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 363px;
+    border: 1px solid var(--color-grey-2);
+    margin: 0 auto;
+    border-radius: 4px;
+    padding: 1.25rem 1.5rem;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 0.375rem;
+}
+
+.topContainer > h3 {
+    color: var(--color-grey-4);
+    font-size: var(--font-title-3);
+}
+
+.topContainer > p{
+    color: var(--color-grey-3);
+}
+
+.totalMoneyContainer span {
+    color: var(--color-primary);
+    font-size: var(--font-title-3);
+    font-weight: 700;
+}

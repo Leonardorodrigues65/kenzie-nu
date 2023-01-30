@@ -1,0 +1,101 @@
+
+.cardContainer {
+    list-style: none;
+    font-weight: 400;
+    color: var(--color-grey-3);
+    background-color: var(--color-grey-1);
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 0.875rem 1rem;
+    gap: 1rem;
+    border-left: 4px solid var(--color-grey-2);
+    border-radius: 8px;
+    margin-bottom: 1.1875rem;
+    transition: .3s ease-in-out;
+    width: 100%;
+}
+
+.cardContainer:hover {
+    background-color: var(--color-grey-0);
+    box-shadow: 2px 2px 9px rgb(0 0 0 / 10%);
+
+
+}
+
+.depositType {
+    border-left-color: var(--color-secundary);
+}
+
+.cardContainer h3 {
+    font-size: var(--font-title-3);
+    color: var(--color-grey-4);
+    font-weight: 700;
+}
+
+.topContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.amountButtonContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 0.625rem;
+}
+
+.transactionType, .topContainer > h3 {
+    text-transform: capitalize;
+}
+
+.transactionType, .amount {
+    font-size: var(--font-body);
+}
+
+.deleteButton {
+    width: 22px;
+    height: 22px;
+    border: none;
+    background-color: var(--color-grey-2);
+    cursor: pointer;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .5s ease-in-out;
+}
+
+.deleteButton > svg {
+    font-size: 0.875rem;
+}
+
+.deleteButton:hover {
+    color: var(--color-grey-0);
+    background-color: var(--color-grey-3);
+}
+
+@media (min-width: 768px){
+
+    .cardContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: baseline;
+    }
+
+
+    .topContainer{
+        gap: 1.5rem;
+        padding: 1rem 0px;
+    }
+
+    .amountButtonContainer {
+        display: flex;
+        flex-direction: row;
+        width: 125px;
+        /* gap: 0.625rem; */
+        align-items: center;
+        justify-content: space-between;
+    }
+}
+

@@ -1,0 +1,23 @@
+/* .mainContainer{
+    min-width: 370px;
+    width: 363px;
+    max-width: 988px;
+    margin: 0 auto;
+    
+} */
+
+@media (min-width: 768px){
+    .mainContainer {
+        display: flex;
+        justify-content: space-between;
+        padding: 0 1rem;
+        margin: 2.4375rem auto;
+        gap: 3.6875rem;
+        max-width: 988px;
+    }
+
+    .formTotalContainer > div, .formTotalContainer section {
+        min-width: 345px;
+        max-width: 363px;
+    }
+}
