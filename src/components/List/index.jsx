@@ -37,9 +37,9 @@ function List({list, setList, setFilter, filter}){
                 <div className={styles.titleButtonsContainer}>
                     <h3 className={styles.listTitle}>Resumo financeiro</h3>
                     <div className={styles.filterButtonsContainer}>
-                        <button className={selectedFilter === 1 ?  styles.selectedFilterButton : styles.nonSelectedButton} onClick={(event) => handleFilter('all', 1)} >All</button>
-                        <button className={selectedFilter === 2 ?  styles.selectedFilterButton : styles.nonSelectedButton} onClick={(event) => handleFilter('deposit', 2)} data-id='deposit' >Deposits</button>
-                        <button className={selectedFilter === 3 ?  styles.selectedFilterButton : styles.nonSelectedButton} onClick={() => handleFilter('expense', 3)} >Expenses</button>
+                        <button className={selectedFilter === 1 ?  styles.selectedFilterButton : styles.nonSelectedButton} onClick={(event) => handleFilter('all', 1)} >Todos</button>
+                        <button className={selectedFilter === 2 ?  styles.selectedFilterButton : styles.nonSelectedButton} onClick={(event) => handleFilter('deposit', 2)} data-id='deposit' >Entradas</button>
+                        <button className={selectedFilter === 3 ?  styles.selectedFilterButton : styles.nonSelectedButton} onClick={() => handleFilter('expense', 3)} >Despesas</button>
                     </div>
                 </div>
 

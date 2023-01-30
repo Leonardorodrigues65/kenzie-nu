@@ -12,7 +12,7 @@ function Form({setList, list, filter, setFilter}) {
     const [type, setType] = useState('')
 
     const showSuccessMessage = () => {
-        toast.success('A new transactin was added to your account', {
+        toast.success('Uma nova transação foi adicionada à sua conta', {
             position: "top-right",
             autoClose: 3000
         })
@@ -76,7 +76,7 @@ function Form({setList, list, filter, setFilter}) {
                             <select  name="type" id="type" value={type} onChange={(event) => setType(event.target.value)} required>
 
                                 <option value="" disabled>Entrada</option>
-                                <option value="deposit">Deposito</option>
+                                <option value="deposit">Entrada</option>
                                 <option value="expense">Despesa</option>
                                 
                             </select>
