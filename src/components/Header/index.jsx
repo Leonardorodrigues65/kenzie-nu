@@ -13,7 +13,7 @@ function Header({click}) {
         <header className={styles.headerContainer}>
             <nav className={styles.navContainer}>
                 <img className={styles.logo} src={logo} alt="Nu Kenzie logo"/>
-                <button className={styles.homeButton} onClick={() => GoToHome(click)}>Home</button>
+                <button className={styles.homeButton} onClick={() => GoToHome(click)}>Inicio</button>
             </nav>
         </header>
     )

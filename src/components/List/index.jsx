@@ -35,7 +35,7 @@ function List({list, setList, setFilter, filter}){
             <ul className={styles.listContainer}>
                 
                 <div className={styles.titleButtonsContainer}>
-                    <h3 className={styles.listTitle}>Account activity</h3>
+                    <h3 className={styles.listTitle}>Resumo financeiro</h3>
                     <div className={styles.filterButtonsContainer}>
                         <button className={selectedFilter === 1 ?  styles.selectedFilterButton : styles.nonSelectedButton} onClick={(event) => handleFilter('all', 1)} >All</button>
                         <button className={selectedFilter === 2 ?  styles.selectedFilterButton : styles.nonSelectedButton} onClick={(event) => handleFilter('deposit', 2)} data-id='deposit' >Deposits</button>
@@ -46,7 +46,7 @@ function List({list, setList, setFilter, filter}){
                 {!list.length > 0 
                     ? 
                     (<>
-                        <h2>You don't have any transactions yet.</h2>
+                        <h2>Você ainda não possui nenhum lançamento.</h2>
                         <img src={noCard} alt="No cards image" />
                     </>)
                     :

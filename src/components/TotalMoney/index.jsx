@@ -18,10 +18,10 @@ function TotalMoney({list}){
         <Font family='Nunito'>
             <section className={styles.totalMoneyContainer}>
                 <div className={styles.topContainer}>
-                    <h3>Total amount:</h3>
-                    <p>The total refers to the balance</p>
+                    <h3>Valor Total:</h3>
+                    <p>O valor se refere ao saldo</p>
                 </div>
-                <span>$ {balance(list)}</span>
+                <span>R$ {balance(list)}</span>
             </section>
         </Font>
     )

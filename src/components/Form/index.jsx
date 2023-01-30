@@ -58,31 +58,31 @@ function Form({setList, list, filter, setFilter}) {
 
                 <Font family='Inter'>
                     <div className={styles.descriptionContainer}>
-                        <label htmlFor="description">Description</label>
-                        <input type="text" name="description" id="description" placeholder="Add a description" value={transaction} onChange={(event) => setTransaction(event.target.value)} required autoComplete='off'/>
-                        <small>Ex: Rent</small>
+                        <label htmlFor="description">Descrição</label>
+                        <input type="text" name="description" id="description" placeholder="Digite aqui sua descrição" value={transaction} onChange={(event) => setTransaction(event.target.value)} required autoComplete='off'/>
+                        <small>Ex: Compras de roupas</small>
                     </div>
                     <div className={styles.amountAndTypeContainer}>
                         <div className={styles.amountContainer}>
-                            <label htmlFor="amount">Amount</label>
+                            <label htmlFor="amount">Valor</label>
                             <div className={styles.inputAmountContainer}>
                                 <input type="number" name="amount" id="amount" value={amount} onChange={(event) => setAmount(Number(event.target.value))} required autoComplete='off'/>
-                                <span className={styles.dollarSymbol}>US$</span>
+                                <span className={styles.dollarSymbol}>R$</span>
                             </div>
                         </div>
                         <div className={styles.typeContainer}>
-                            <label htmlFor="type">Type</label>
+                            <label htmlFor="type">Tipo de Valor</label>
 
                             <select  name="type" id="type" value={type} onChange={(event) => setType(event.target.value)} required>
 
-                                <option value="" disabled>Select a type</option>
-                                <option value="deposit">Deposit</option>
-                                <option value="expense">Expense</option>
+                                <option value="" disabled>Entrada</option>
+                                <option value="deposit">Deposito</option>
+                                <option value="expense">Despesa</option>
                                 
                             </select>
                         </div>
                     </div>
-                    <button type='submit' className={styles.addTransactionButton}>Add transaction</button>
+                    <button type='submit' className={styles.addTransactionButton}>Inserir valor</button>
                     <ToastContainer />
                 </Font>
 

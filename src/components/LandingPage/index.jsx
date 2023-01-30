@@ -9,10 +9,10 @@ function LandingPage({click}) {
             <div className={styles.landingPageContainer}>
                 <div className={styles.topContainer}>
                     <img src={logo} alt="Nu Kenzie logo" />
-                    <h1>Centralize control of your finances</h1>
-                    <p>in a faster and secure way</p>
+                    <h1>Centralize o controle das suas finanças</h1>
+                    <p>de forma rapida e segura</p>
                 
-                    <button onClick={() => click(true)} type='button'>Start</button>
+                    <button onClick={() => click(true)} type='button'>iniciar</button>
                 </div>
                 <div className={styles.bottomContainer}>
                 
